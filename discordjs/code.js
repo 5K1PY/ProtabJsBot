@@ -1,4 +1,5 @@
 // načtení knihoven
+require('dotenv').config()
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -16,4 +17,4 @@ client.on('message', message => {
 	}
 });
 
-client.login('ODcwMjE2NDI0MTM4ODk1MzYw.YQJiMw.V_XGdRbUdEObQHqj73fRnzGRTlE');
+client.login(process.env.TOKEN);
